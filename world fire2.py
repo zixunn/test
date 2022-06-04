@@ -86,7 +86,7 @@ def update_graph(option_slctd):
 		        cmin = 290,
 		        color = df['brightness'],
 		        cmax = 370,
-		        colorbar_title="brightness<br>0606 2022"
+		        colorbar_title="brightness"
 
     		)))
     fig.update_layout(
