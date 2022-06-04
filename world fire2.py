@@ -12,7 +12,7 @@ app = Dash(__name__)
 # -- Import and clean data (importing csv into pandas)
 # df = pd.read_csv("intro_bees.csv")
 df = pd.read_csv('C:/Users/emily/Desktop/world2/0518MODIS_C6_1_Global_24h.csv')
-df['text'] = df['acq_date'].astype(str) + ',' + df['acq_time'].astype(str)+ ',' + df['daynight'].astype(str)+ ',' + df['brightness'].astype(str) + ',' + df['bright_t31'].astype(str) + ',' + df['scan'].astype(str) + ',' + df['track'].astype(str)
+df['text'] = df['acq_date'].astype(str) + ',' + df['acq_time'].astype(str)+ ',' + df['daynight'].astype(str)+ ',' + df['brightness'].astype(str) + ',' +  df['scan'].astype(str) 
 # df = df.groupby(['acq_date', 'acq_time', 'latitude', 'longitude', 'daynight', 'brightness', 'scan'])[['Pct of Colonies Impacted']]
 # df.reset_index(inplace=True)
 print(df)
